@@ -1,0 +1,409 @@
+/* Raisin Black (#202124), Charleston Green (#282C2F), Onyx (#323639) and Light Silver (#D6D6D7). */
+
+body{
+    margin: 0;
+    background: #323639;
+    color: #D6D6D7;
+    font-family: 'Asap', 'sans-serif';
+}
+
+p, blockquote{
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hideMobile{
+    display: none;
+}
+
+.menu{
+    width: 35px;
+    margin-top: 25%;
+}
+
+.server{
+    width: 70%;
+    margin: 2em auto 2em 25%;
+}
+
+h1, .subhead{
+    position: relative;
+    z-index: 3;
+}
+
+.subhead{
+    font-size: 1.1em;
+}
+
+.blueContainer{
+    width: 100%;
+    background: deepskyblue;
+    color: #fff;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+
+.blueContainer:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: deepskyblue;
+    position: absolute;
+    top: -39px;
+    right: 0px;
+    z-index: -2;
+}
+
+.blueContainer:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #323639;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.blueContainer ul{
+    transform: skewY(2deg);
+}
+
+.blueContainer ul li{
+    margin-bottom: 3em;
+}
+
+.blueContainer ul li p{
+    padding: 0 .5em;
+}
+
+.blueContainer img{
+    width: 14%;
+}
+
+.blueContainer ul li:nth-child(3) img{
+    width: 8%;
+}
+
+.greyContainer{
+    /* background: #323639; */
+    background: grey;
+    padding: 4em 0 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.greyContainer ul li:first-child{
+    margin-bottom: 2em;
+}
+
+.greyContainer ul{
+    align-items: center;
+    justify-content: center;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+figcaption{
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+h2{
+    margin-top: 7%;
+}
+
+.cta{
+    background: #00CC80;
+    width: calc(100% - 1em);
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+.footerContainer{
+    width: 100%;
+    background: black;
+    color: #fff;
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+}
+
+.footerContainer .container{
+    transform: skewY(-2deg);
+}
+
+.footerContainer:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+
+.footerContainer:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #323639;
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.footerLinks{
+    margin: 0 auto;
+}
+
+.footerLinks li{
+    display: inline-block;
+}
+
+.footerLinks li a{
+    color: #9D9D9D;
+    font-size: .8em;
+}
+
+.footerContainer a{
+    color: #9D9D9D;
+    text-decoration-color: #9D9D9D;
+    font-size: .9em;
+}
+
+nav ul{
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover{
+    background-color: rgb(65, 73, 78);
+}
+
+.exitBtn{
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exitBtn img{
+    width: 15px;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (min-width: 650px){
+    .server{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .subhead{
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+    .blueContainer{
+        margin: 0;
+    }
+
+    .blueContainer img{
+        width: 20%;
+    }
+
+    .blueContainer ul li:nth-child(3) img{
+        width: 11%;
+        margin-top: -6px;
+    }
+
+    .blueContainer ul{
+        display: flex;
+        margin-top: -1em;
+        align-items: center;
+    }
+
+    .blueContainer ul li{
+        margin-bottom: 0;
+    }
+
+    .blueContainer ul li p{
+        padding: 0 .8em;
+    }
+
+    .greyContainer ul{
+        display: flex;
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+
+    /* .greyContainer ul li figure img{
+        align-items: center;
+    } */
+
+    nav ul{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 875px){
+    .subhead{
+        margin-bottom: 15%;
+    }
+
+    .blueContainer ul{
+        margin: 0 0 4% 0;
+    }
+
+    .greyContainer ul{
+        margin: 4% 0 0;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .cta{
+        width: 50%;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .showDesktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hideDesktop{
+        display: none;
+    }
+
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        color: black;
+        background-color: inherit;
+        text-align: right;
+    }
+
+    nav ul li a:hover{
+        background-color: inherit;
+    }
+
+    .scroll{
+        width: 30px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move{
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(20px);
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1600px){
+    .server{
+        width: 40%;
+        margin: 5em auto 4em 15%;
+    }
+
+    .container{
+        width: 70%
+    }
+
+    .blueContainer{
+        padding: 7em 0 2em;
+    }
+
+    .blueContainer ul li p, blockquote{
+        font-size: 1.3em;
+    }
+
+    .greyContainer{
+        padding: 6em 0 4em;
+    }
+
+    h2{
+        margin-top: 4em;
+    }
+
+    .blueContainer img{
+        width: 15%;
+    }
+
+    .blueContainer ul li:nth-child(3) img{
+        width: 8%;
+        margin-top: -4%;
+    }
+}
